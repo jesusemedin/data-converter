@@ -20,6 +20,9 @@ function unidades(name, equikilo, equimega, equigiga, equitera)
 
 var GB = new unidades("GigaByte", 1048576, 1024, 1, 0.0009765625)
 var MB = new unidades("MegaByte", 1024, 1, 0.0009765625, 0.0000009537)
-var KB = new unidades("KiloByte", 1, 0.0009765625, 0.0000009537, )
+var KB = new unidades("KiloByte", 1, 0.0009765625, 0.0000009537, 0.0000000009)
 
-GB.conversion(1)
+// GB.conversion(1)
+
+var prueba = 2e+34
+ alert(prueba)
