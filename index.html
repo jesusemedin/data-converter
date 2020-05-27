@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DATA CONVERT
     </title>
-    <script type="text/javascript" src="calculos.js">
+    <script type="text/javascript" src="nuevocalculo.js">
     </script>
 </head>
 <body>
@@ -22,33 +22,35 @@
 <label>Select Unit</label>
 </h2>
 
-<label>De</label>
-<select>
+<label for="datosentrantes">De</label>
 
-
-    <option>BIT</option>
-    <option>BYTE</option>
-    <option>KILOBYTE</option>
-    <option>MEGABYTE</option>
-    <option>GIGABYTE</option>
-    <option>TERABYTE</option>
+<select id="DatoE" name="datosentrantes">
+    <option value="b">BIT</option>
+    <option value="B">BYTE</option>
+    <option value="KB">KILOBYTE</option>
+    <option value="MB">MEGABYTE</option>
+    <option value="GB">GIGABYTE</option>
+    <option value="TB">TERABYTE</option>
 </select>
-<input type="number">
+<input type="number" id="ValorEntrada">
 
-<label>Para</label>
-<select>
-    <option>BIT</option>
-    <option>BYTE</option>
-    <option>KILOBYTE</option>
-    <option>MEGABYTE</option>
-    <option>GIGABYTE</option>
-    <option>TERABYTE</option>
+<label for="datossalientes">Para</label>
+<select id="DatoS" for="datossalientes">
+    <option value="b">BIT</option>
+    <option value="B">BYTE</option>
+    <option value="KB">KILOBYTE</option>
+    <option value="MB">MEGABYTE</option>
+    <option value="GB">GIGABYTE</option>
+    <option value="TB">TERABYTE</option>
 </select>
-<input type="number">
+<input type="number" id="ValorSalida">
 
-<input type="button" value="Calculate"
+<input type="button" value="Calcular" id="boton"></input>
 
-></center>
+<script type="text/javascript">
+    iniciar();
+</script>
 
+</center>
 </body>
 </html>
